@@ -1,0 +1,249 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px = 1rem , 100% / 16px = 62.5%  */
+}
+
+body {
+    box-sizing: border-box;
+    margin: 5rem;
+    border-radius: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    color: #141414;
+    background-color: rgba(195, 195, 195, 0.4);
+}
+
+.icon-1 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-3 {
+    width: 3rem;
+    height: 3rem;
+}
+
+.heading-2 {
+    color: #000;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.heading-3 {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.title-1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.title-3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.search {
+    display: flex;
+    padding: .4rem;
+    width: fit-content;
+    border-radius: 100px;
+    transition: .4s all;
+    margin: 1rem;
+    position: relative;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+}
+
+.search__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.search__icon--expo {
+    background-color: #fcfcfc;
+    padding: 2px;
+    border-radius: 100px;
+}
+
+.search__input {
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 100px;
+    height: 2.5rem;
+    padding: 1rem;
+}
+
+.search__input:focus {
+    outline: none;
+}
+
+.hero {
+    text-align: center;
+    height: 70vh;
+    min-height: 55rem;
+    width: fit-content;
+    padding: 4rem;
+}
+
+.hero__icon {
+    width: 24rem;
+    height: 24rem;
+}
+
+.hero__temp {
+    font-size: 8rem;
+    text-align: center;
+}
+
+.hero__temp--smb {
+    font-size: 5rem;
+    vertical-align: top;
+}
+
+.hero__time {
+    font-size: 2rem;
+}
+
+.hero__time--time {
+    color: #6e6e6e;
+}
+
+.hero__name {
+    font-size: 1.4rem;
+    margin: 1rem;
+    text-align: left;
+    text-transform: capitalize
+}
+
+.hero__name--icon {
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(35%);
+}
+
+.highlight-box {
+    width: 24rem;
+    height: 20rem;
+    border-radius: 1.6rem;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.city-box {
+    width: 88%;
+
+    background-color: #b8c6db;
+
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    
+    
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.day-card {
+    width: 9rem;
+    height: 12rem;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    box-sizing: content-box;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.day-card__icon {
+    width: 60%;
+    margin: .5rem;
+}
+
+.day-card__temp {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.day-card__temp--min {
+    color: #666;
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+}
+
+.btn__round {
+    border-radius: 100%;
+}
+
+.week__title {
+    margin-bottom: 2.5rem;
+    text-decoration: underline;
+}
+
+.week__card {
+    display: flex;
+    justify-content: center;
+}
+
+.today {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.today__title {
+    margin: 1rem 0 1rem 0;
+}
+
+.today__highlight-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.side {
+    width: 25vw;
+    min-width: 30rem;
+    background-color: #fff;
+    border-radius: 4rem 0 0 4rem;
+    box-shadow: 2rem 3rem 6rem #999;
+}
+
+.main {
+    width: 90rem;
+    background-color: #f7f7f7;
+    border-radius: 0 4rem 4rem 0;
+    padding: 2rem;
+    box-shadow: 2rem 3rem 6rem #999;
+}
