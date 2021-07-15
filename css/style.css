@@ -251,3 +251,48 @@ body {
     padding: 2rem;
     box-shadow: 2rem 3rem 6rem #999;
 }
+
+.error{
+    margin: 2rem;
+}
+
+.error__code{
+    font-size: 5rem;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+    /* html {
+        font-size: 56.5%;
+        10px = 1rem , 100% / 16px = 62.5% 
+    } */
+
+    body{
+        margin: 3rem;
+    }
+
+    .side{
+        width: 100%;
+        border-radius: 3rem;
+    }
+
+    .main{
+        display: none;
+        width: 100%;
+        border-radius: 3rem;
+    }
+
+    .week__card{
+        overflow: scroll;
+        justify-content: left;
+    }
+
+    .day-card{
+        min-width: 9rem;
+    }
+
+    .highlight-box{
+        width: 100%;
+        text-align: center;
+    }
+  }

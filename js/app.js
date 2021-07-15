@@ -3,6 +3,7 @@ import weekReport from './module/weekReport.js';
 import * as curerentView from './view/searchView.js';
 import * as weekView from './view/weekReportView.js';
 import * as highlightView from './view/todayHighlightView.js';
+import errorView from './view/errorView.js';
 import { elements } from './view/base.js';
 
 const state = {};
@@ -10,10 +11,12 @@ const state = {};
 const controlCurrent = async () => {
   const qurey = curerentView.getvalue();
 
-  console.log(qurey);
-
   if (qurey) {
     state.result = new Place(qurey);
+    console.log(state.result);
+    // if (state.result.result.cod) {
+    //   errorView(state.result.result);
+    // }
     curerentView.clearCurrentResult();
     weekView.clearWeekResult();
     renderMainScreen();
@@ -58,12 +61,11 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
-    x.innerHTML = 'Geolocation is not supported by this browser.';
+    alert('Geolocation is not supported by this browser.');
   }
 }
 
 async function showPosition(position) {
-  console.log(position);
   state.result = new Place(
     '',
     position.coords.latitude,
@@ -85,3 +87,14 @@ window.addEventListener('load', () => {
 if (!window.navigator.onLine) {
   alert('Please check the internet conection');
 }
+
+// window.addEventListener('DOMContentLoaded', event => {
+//   if (screen.width < 600) {
+//     console.log(elements.cityBox);
+//     elements.cityBox.addEventListener('click', () => {
+//       // elements.sidePanal.display = 'none';
+//       // elements.mainPanal.display = 'block';
+//       console.log(elements.sidePanal.display);
+//     });
+//   }
+// });
